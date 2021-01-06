@@ -7,7 +7,7 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
       - name: Build the project
-        run: sh ci/build.sh Debug .
+        run: sh ci/build.sh Debug
       - name: Unit tests
         id: tests
-        run: sh ci/test.sh Debug .
+        run: sh ci/test.sh Debug
