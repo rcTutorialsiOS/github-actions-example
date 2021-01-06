@@ -1,0 +1,13 @@
+name: "iOS CI"
+on: [pull_request, push]
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+      - name: Build the project
+        run: sh ci/build.sh Debug ..
+      - name: Unit tests
+        id: tests
+        run: sh ci/test.sh Debug ..
