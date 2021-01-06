@@ -1,7 +1,7 @@
 name: "iOS CI"
 on: [pull_request, push]
 jobs:
-  build:
+  build and tests:
     runs-on: macOS-latest
     steps:
       - name: Checkout the code
