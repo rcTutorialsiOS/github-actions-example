@@ -1,7 +1,6 @@
 #!/bin/bash
 config="$1"
 project_path="$2"
-
 cd $project_path
 
 xcrun xcodebuild \

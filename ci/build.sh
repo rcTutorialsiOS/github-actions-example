@@ -1,12 +1,7 @@
 #!/bin/bash
 config="$1"
 project_path="$2"
-
-ls -la
-
 cd $project_path
-
-ls -la
 
 xcrun xcodebuild \
     -scheme "Github Actions Example" \
