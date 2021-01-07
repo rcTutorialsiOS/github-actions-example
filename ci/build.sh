@@ -11,5 +11,3 @@ xcrun xcodebuild \
     -destination 'platform=iOS Simulator,name=iPhone 12' \
     -derivedDataPath build \
     | xcpretty
-
-# -destination 'platform=iOS Simulator,name=iPhone 12' \

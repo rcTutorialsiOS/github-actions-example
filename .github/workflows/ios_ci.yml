@@ -4,14 +4,14 @@ jobs:
   build_n_tests:
     runs-on: macOS-latest
     steps:
-      - name: List of simulators
-        run: xcrun simctl list 
       - name: Checkout the code
         uses: actions/checkout@v2
       - name: Pod install
         run: pod install
+      - name: List of simulators
+        run: xcrun simctl list 
       - name: Build the project
         run: sh ci/build.sh Debug
-      # - name: Unit tests
-      #   id: tests
-      #   run: sh ci/test.sh Debug
+      - name: Unit tests
+        id: tests
+        run: sh ci/test.sh Debug
