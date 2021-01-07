@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
+      - name: Pod install
+        run: pod install
       - name: Build the project
         run: sh ci/build.sh Debug
       - name: Unit tests
