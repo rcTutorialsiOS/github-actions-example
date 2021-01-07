@@ -8,7 +8,8 @@ xcrun xcodebuild \
     -scheme "Github Actions Example" \
     -workspace "Github Actions Example.xcworkspace" \
     -configuration $config \
+    -destination 'platform=iOS Simulator,name=iPhone 12' \
     -derivedDataPath build \
     | xcpretty
 
-# -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' \
+# -destination 'platform=iOS Simulator,name=iPhone 12' \
