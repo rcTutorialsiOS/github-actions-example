@@ -1,4 +1,7 @@
 #!/bin/bash
+set -xeu
+set -o pipefail
+
 config="$1"
 
 xcrun xcodebuild \
